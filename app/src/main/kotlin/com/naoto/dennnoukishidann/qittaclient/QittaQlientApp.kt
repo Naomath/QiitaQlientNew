@@ -10,6 +10,6 @@ import android.support.v7.app.AppCompatActivity
 class QiitaQlientApp : Application() {
 
     val component: AppCompatActivity by lazy {
-
+        DaggerAppComponent.create()
     }
 }
